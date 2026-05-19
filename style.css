@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f7fb;
+    color:#111827;
+}
+
+/* Dark Mode */
+
+body.dark{
+    background:#111827;
+    color:white;
+}
+
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#1e293b;
+    color:white;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+nav button{
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 60px;
+    min-height:90vh;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.hero-text button{
+    padding:14px 28px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.hero-image{
+    width:45%;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+
+/* Sections */
+
+.features,
+.dashboard,
+.expense-section,
+.table-section,
+.charts-section,
+.tips-section{
+    padding:80px 60px;
+    text-align:center;
+}
+
+
+/* Cards */
+
+.feature-container,
+.dashboard-cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card,
+.dashboard-card{
+    background:white;
+    padding:30px;
+    width:280px;
+    border-radius:15px;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+}
+
+body.dark .card,
+body.dark .dashboard-card,
+body.dark table,
+body.dark .tips-box{
+    background:#1f2937;
+    color:white;
+}
+
+.card i{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.dashboard-card p{
+    font-size:28px;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+
+/* Budget Input */
+
+.budget-set{
+    margin-top:30px;
+}
+
+.budget-set input{
+    padding:12px;
+    width:250px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.budget-set button{
+    padding:12px 20px;
+    margin-left:10px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+/* Expense Form */
+
+.expense-form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.expense-form input,
+.expense-form select{
+    padding:12px;
+    width:220px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.expense-form button{
+    padding:12px 20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+/* Table */
+
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,
+td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+td button{
+    padding:8px 14px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+/* Chart */
+
+.chart-container{
+    width:500px;
+    margin:auto;
+}
+
+
+/* Tips */
+
+.tips-box{
+    width:60%;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+    background:white;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+}
+
+
+/* Footer */
+
+footer{
+    background:#1e293b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text,
+    .hero-image{
+        width:100%;
+    }
+
+    .hero-text{
+        margin-bottom:40px;
+    }
+
+    .chart-container{
+        width:100%;
+    }
+
+    .tips-box{
+        width:100%;
+    }
+
+    .budget-set input{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .budget-set button{
+        width:100%;
+        margin-left:0;
+    }
+}
